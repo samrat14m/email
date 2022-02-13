@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    background-image: url(./images/bg.jpg);
+    background-size:cover;
+    color: rgb(143, 3, 84);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+    width:80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin:10px 10px 30px 10px;
+    background-color: rgba(0, 44, 167, 0.2);
+    border-radius: 25px;
+    z-index: 1;
+}
+.foot{
+    width:100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin:30px 0px 0px 0px;
+    background-color: rgba(121, 121, 121,0.7);
+    z-index: 1;
+}
+.logo{
+    width:40%;
+}
+.links{
+    width:45%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    color:rgb(20, 20, 94);
+}
+.nav-link:hover{
+    color: crimson;
+}
+
+.menu{
+    width:60%;
+    margin:0px 0px 0px 30px;
+}
+
+
+
+
+@media(max-width:1100px){
+    .location{height:150px; margin:15px;}
+}
+@media (max-width:900px) and (min-width:0px) {
+    .nav{margin:10px 10px 0px 10px;}
+    .links{width:60%;}
+    .content{flex-direction: column;}
+    .t{width: 100%;}
+    .intro{display: block; height: auto;}
+    .sahara{font-size:3em;}
+    .sahara-intro{font-size: 1em;}
+    .description{ flex-direction: column nowrap; height: fit-content;}
+    .location{width:70%;height:200px;}
+}
+
+@media (max-width:550px) {
+    .links{flex-flow: column nowrap;}
+    .logo{position: relative; top:10px;}
+    .menu{position: relative; top:15px;}
+}
